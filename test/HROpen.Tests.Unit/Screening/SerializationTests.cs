@@ -10,6 +10,7 @@ namespace HROpen.Screening
         [Theory]
         [InlineData("Screening\\json\\samples\\Position.json", typeof(PositionDto))]
         [InlineData("Screening\\json\\samples\\StatusNotification.json", typeof(StatusNotificationDto))]
+        [InlineData("Screening\\json\\samples\\ScreeningVendorMessage1.json", typeof(ScreeningVendorMessageDto))]
         public async Task SerializesToAndFromJson(string sampleFilePath, Type type)
         {
             // Arrange
