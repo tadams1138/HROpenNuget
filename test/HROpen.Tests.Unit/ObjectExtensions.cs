@@ -9,7 +9,8 @@ namespace HROpen
     {
         private static readonly JsonSerializer JsonSerializer = new()
         {
-            ContractResolver = new CamelCasePropertyNamesContractResolver()
+            ContractResolver = new CamelCasePropertyNamesContractResolver(),
+            NullValueHandling = NullValueHandling.Ignore
         };
 
         public static void ShouldMatchJson(this object o, string json)
