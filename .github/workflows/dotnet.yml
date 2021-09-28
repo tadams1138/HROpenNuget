@@ -17,7 +17,7 @@ jobs:
       uses: actions/checkout@v2
       with:
         repository: HROpen/Screening
-        token: ${{ secrets.HROpen_Screening_PAT }} # `GitHub_PAT` is a secret that contains your PAT
+        token: ${{ secrets.TADAMS1138_PAT }} # `GitHub_PAT` is a secret that contains your PAT
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
