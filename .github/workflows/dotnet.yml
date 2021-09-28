@@ -13,12 +13,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v2
     - name: Checkout Screening Repo
       uses: actions/checkout@v2
       with:
         repository: HROpen/Screening
         token: ${{ secrets.TADAMS1138_PAT }} # `GitHub_PAT` is a secret that contains your PAT    
-    - uses: actions/checkout@v2
+        path: './Screening'
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
